@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+  <title>Date with Me?</title>\
+  <style>\
+    body \{\
+      font-family: 'Arial', sans-serif;\
+      background: linear-gradient(135deg, #FFDEE9, #B5FFFC);\
+      display: flex;\
+      flex-direction: column;\
+      justify-content: center;\
+      align-items: center;\
+      height: 100vh;\
+      text-align: center;\
+      color: #333;\
+    \}\
+\
+    h1 \{\
+      font-size: 3em;\
+      margin-bottom: 20px;\
+    \}\
+\
+    p \{\
+      font-size: 1.5em;\
+      margin-bottom: 30px;\
+    \}\
+\
+    button \{\
+      font-size: 1.2em;\
+      padding: 15px 30px;\
+      margin: 10px;\
+      border: none;\
+      border-radius: 8px;\
+      cursor: pointer;\
+      transition: 0.3s;\
+    \}\
+\
+    #yes \{\
+      background-color: #FF6B6B;\
+      color: white;\
+    \}\
+\
+    #no \{\
+      background-color: #4ECDC4;\
+      color: white;\
+      position: relative;\
+    \}\
+\
+    #no:hover \{\
+      background-color: #1A535C;\
+    \}\
+  </style>\
+</head>\
+<body>\
+  <h1>Hey Dongsy 
+\f1 \uc0\u55357 \u56470 
+\f0 </h1>\
+  <p>Would you go on a date with me?</p>\
+  <button id="yes">Yes 
+\f1 \uc0\u55357 \u56845 
+\f0 </button>\
+  <button id="no">No 
+\f1 \uc0\u55357 \u56866 
+\f0 </button>\
+\
+  <script>\
+    const yesButton = document.getElementById('yes');\
+    const noButton = document.getElementById('no');\
+\
+    yesButton.addEventListener('click', () => \{\
+      alert("Yay! I can't wait! 
+\f1 \uc0\u55357 \u56469 
+\f0 ");\
+    \});\
+\
+    // Make the 'No' button move away when hovered\
+    noButton.addEventListener('mouseenter', () => \{\
+      const x = Math.random() * (window.innerWidth - noButton.clientWidth);\
+      const y = Math.random() * (window.innerHeight - noButton.clientHeight);\
+      noButton.style.position = "absolute";\
+      noButton.style.left = x + "px";\
+      noButton.style.top = y + "px";\
+    \});\
+  </script>\
+</body>\
+</html>\
+}
